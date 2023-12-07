@@ -1,8 +1,9 @@
-import './App.css';
-import SignUP from './Components/SignUP/SignUP';
-import Login from './Components/Login/Login';
-import SearchComponent from './Components/Search';
-
+import "./App.css";
+import SignInScreen from "./Components/SignUP/SignUP";
+import Login from "./Components/Login/Login";
+// import SearchComponent from './Components/Search';
+import HomeScreen from "./Components/HomeScreen";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
 
@@ -13,8 +14,13 @@ function App() {
 
   return (
     <div className="App">
-      <SignUP/>
-      <Login/>
+      <Routes>
+            <Route path="/" element={<HomeScreen />} />
+
+            <Route path="/login" element={<Login />} />
+            
+            <Route path="/signIn" element={<SignInScreen />} />
+          </Routes>
       {/* <SearchComponent onSearch={handleSearch} /> */}
     </div>
   );
