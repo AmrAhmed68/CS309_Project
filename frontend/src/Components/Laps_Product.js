@@ -1,13 +1,13 @@
 // let products = [
 //       
-//       {
-//         id: '2',
-//         title: 'V15 Gen 2',
-//         description: 'Perfect for remote work...',
-//         price: 10999,
-//         brand: 'Lenovo',
-//         images:'https://www.lenovo.com/medias/lenovo-laptops-thinkbook-series-c-thinkbook-15-gen-2-amd-series.png?context=bWFzdGVyfHJvb3R8OTY3MTR8aW1hZ2UvcG5nfGgxYS9oMGEvMTQxOTA0ODI5ODA4OTQucG5nfGRjYzA3ZTFlN2RiZTJiYzE2NjU1M2NkZmJkZWRlZDQ4YjQ2YjZlOTllOTExNjRkYTIzYTc2ZTQ2OWM4OTM3NDk'
-//      },
+    //   {
+    //     id: '2',
+    //     title: 'V15 Gen 2',
+    //     description: 'Perfect for remote work...',
+    //     price: 10999,
+    //     brand: 'Lenovo',
+    //     images:'https://www.lenovo.com/medias/lenovo-laptops-thinkbook-series-c-thinkbook-15-gen-2-amd-series.png?context=bWFzdGVyfHJvb3R8OTY3MTR8aW1hZ2UvcG5nfGgxYS9oMGEvMTQxOTA0ODI5ODA4OTQucG5nfGRjYzA3ZTFlN2RiZTJiYzE2NjU1M2NkZmJkZWRlZDQ4YjQ2YjZlOTllOTExNjRkYTIzYTc2ZTQ2OWM4OTM3NDk'
+    //  },
 //       {
 //         id: '3',
 //         title: '16p Gen 2',
