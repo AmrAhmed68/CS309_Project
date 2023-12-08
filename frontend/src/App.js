@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
+      <Search/>
       {/* <Slider/> */}
       <Routes>
             <Route path="/" element={<HomeScreen />} />
