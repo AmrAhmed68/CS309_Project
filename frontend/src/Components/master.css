@@ -1,0 +1,197 @@
+/* Start Varibles */
+:root {
+    --main-color: #10cab7;
+}
+
+
+/* End Varibles */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Header */
+.header {
+    padding: 10px; 
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .logo {
+    width: 60px;
+    height: 60px;
+}
+.header .container .links .icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 30px;
+}
+
+.header .container .links .icon span {
+    display: block;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.header .container .links .icon span:nth-child(2) {
+    width: 60%;
+    transition-duration: 0.3s;
+}
+
+.header .container .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .container .links {
+    position: relative;
+}
+
+.header .container .links ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    top: calc(100% + 15px);
+    right: 0;
+    min-width: 200px;
+    z-index: 1;
+}
+
+
+.header .container .links ul::before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    top: -20px;
+    right: 5px;
+}
+
+.header .container .links ul li a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.header .container .links ul li a:hover {
+    padding-left: 25px;
+}
+
+
+.header .container .links ul li:not(:last-child) a {
+    border-bottom: 2px solid #DDD;
+}
+
+.header .container .links:hover ul {
+    display: block;
+}
+.sign-btn {
+    background-color: transparent;
+    color: black;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    font-weight: bold;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav-btn{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sign-btn:hover{
+    background-color: black;
+    color: white
+}
+
+/* End Header */
+/* Start Landing */
+.landing {
+    background-image: url(./Assest/laptop_ultra_4k_hd_desktop_background-3840x2160.jpg);
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 84px);
+    position: relative;
+    text-align: center;
+}
+
+.landing .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+}
+
+.landing .intro-text h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+.landing .intro-text p {
+    color: #fff;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+
+/* End Landing */

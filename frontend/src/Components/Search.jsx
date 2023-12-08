@@ -1,29 +1,14 @@
-import React, { useState } from 'react';
+// Search.jsx
+import React from 'react';
 
-const SearchComponent = ({ onSearch }) => {
-  const [query, setQuery] = useState('');
-
-  const handleInputChange = (event) => {
-    setQuery(event.target.value);
-  };
-
-  const handleSearch = () => {
-    // You can perform additional actions here, such as fetching data from an API
-    // based on the search query before calling the onSearch callback.
-    onSearch(query);
-  };
-
+const Search = ({ onChange }) => {
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Search..."
-        value={query}
-        onChange={handleInputChange}
-      />
-      <button onClick={handleSearch}>Search</button>
-    </div>
+    <input
+      type='search'
+      placeholder='Search...'
+      onChange={onChange}
+    />
   );
 };
 
-export default SearchComponent;
+export default Search;

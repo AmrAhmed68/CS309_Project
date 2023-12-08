@@ -7,7 +7,6 @@ const Slider = () => {
   
     return (
       <div>
-        <h1>Image Slider</h1>
         <ImageSlider images={images} />
       </div>
     );

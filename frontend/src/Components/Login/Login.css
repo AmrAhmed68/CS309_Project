@@ -1,4 +1,7 @@
-.container{
+/* body{
+    background-color: #4c00b4;
+} */
+.Logcontainer{
     display: flex;
     flex-direction:column;
     margin: auto;
@@ -10,7 +13,7 @@
     padding-bottom: 30px;
     
 }
-.header{
+.Logheader{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,24 +21,24 @@
     width: 100%;
     margin-top: 30px;
 }
-.text{
+.Logtext{
     color: #3C009d;
     font-size: 50px;
     font-weight: 700;
 }
-.underline{
+.Logunderline{
     width: 61px ;
     height: 6px ;
     background:#3C009d;
     border-radius: 9px;
 }
-.inputs{
+.Loginputs{
     margin-top: 55px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-.input{
+.Loginput{
     display: flex;
     align-items: center;
     margin: auto;
@@ -44,10 +47,10 @@
     background: #eaeaea;
     border-radius: 6px;
 }
-.input img {
+.Loginput img {
     margin: 0px 30px;
 }
-.input input{
+.Loginput input{
     height: 50px ;
     width: 400px ;
     background: transparent;
@@ -56,12 +59,12 @@
     color: #797979 ;
     font-size: 19 px;
 }
-.submit-container{
+.Logsubmit-container{
     display: flex;
     gap: 30px ;
     margin: 60px auto;
 }
-.submit{
+.Logsubmit{
     display: flex;
     justify-content: center;
     align-items: center;

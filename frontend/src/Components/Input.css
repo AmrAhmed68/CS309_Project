@@ -1,10 +1,21 @@
-.container {
-  display: flex;
+/* .container {
+  max-width: 20%;
+  display: inline-block;
   flex-direction: column;
-  align-items: center; /* Align items to the center horizontally */
-}
+  margin: 16px;
+  align-items: center; /* Align items to the center horizontally
+} */
+  .card-container {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-left: -39px;
+    margin-top: 2rem;
+    z-index: -2;
+    max-width: 18rem;
+    min-width: 16rem;
+  }
 
-.card {
+/* .card {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
@@ -13,9 +24,15 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   max-width: 200px;
+} */
+.card  {
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  cursor: pointer;
+  max-height: 25rem;
 }
-
-.card:hover {
+/* .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -25,7 +42,9 @@
   border-radius: 8px;
   margin-bottom: 8px;
   cursor: pointer;
+  height: 30%;
 }
+
 
 h2 {
   color: #333;
@@ -52,11 +71,24 @@ p {
 .bnt:hover {
   background-color: #0056b3;
 }
+
+@media screen and (max-width: 768px) {
+  .image-slider {
+    height: 200px; 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .image-slider {
+    height: 150px; 
+  }
+} */ 
+
 .image-slider {
   position: relative;
   width: 100%;
-  max-width: 100%; /* Ensure it doesn't exceed the screen width */
-  height: 300px; /* Set a fixed or percentage-based height for the container */
+  max-width: 100%; 
+  height: 700px; 
   overflow: hidden;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -64,6 +96,7 @@ p {
 }
 
 .image-slider img {
+  
   position: absolute;
   width: 100%;
   height: 100%;
@@ -76,15 +109,30 @@ p {
   opacity: 1;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .image-slider {
-    height: 200px; /* Adjust the height for smaller screens */
-  }
+
+.card-img {
+  max-height: 117px;
+  width: 13rem;
+  margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 576px) {
-  .image-slider {
-    height: 150px; /* Further adjust the height for even smaller screens */
-  }
+.card-title {
+  margin-bottom: 1rem;
+  /* max-width: 1rem; */
+  min-height: 1erm;
+}
+
+/*.description-card{
+  max-width: 1rem;
+  max-height: 1rem;
+} */
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bag-icon {
+  color: #535353;
 }

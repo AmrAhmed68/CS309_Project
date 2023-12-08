@@ -24,7 +24,9 @@ function Product() {
             <Input key={product.id} product={product}/>
         )
     })
-    return <div> {products} </div>
+    return <div> 
+        {products}
+         </div>
   }
   
   export default Product;
